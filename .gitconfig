@@ -1,0 +1,7 @@
+[user]
+	name = Sam Joseph
+	email = sam.joseph@blackcatsolutions.co.uk
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/samjoseph/.gitignore_global
