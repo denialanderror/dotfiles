@@ -1,0 +1,16 @@
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias cat=bat
+alias config='/usr/bin/git --git-dir=/Users/samjoseph/.cfg/ --work-tree=/Users/samjoseph'
+alias gcom='git checkout master'
+alias gfu='git commit --all --amend --no-edit && git push --force-with-lease'
+alias gpu='git push -u'
+alias grh='git reset --hard'
+alias grom='git rebase origin/master'
+alias gst='git status'
+alias mkdir='mkdir -p'
+alias myip='curl ipecho.net/plain ; echo'
+alias ping='prettyping --nolegend'
+alias run-help=man
+alias which-command=whence
