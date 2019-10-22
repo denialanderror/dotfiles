@@ -1,12 +1,12 @@
-source .zsh_plugins
-source .zsh_aliases
+source $HOME/.zsh_plugins
+source $HOME/.zsh_aliases
 
 # load zsh completions
 autoload -U compinit && compinit
 
 # history configuration
 HISTSIZE=5000
-HISTFILE=~/.zsh_history
+HISTFILE=$HOME/.zsh_history
 SAVEHIST=5000
 setopt APPEND_HISTORY SHARE_HISTORY INC_APPEND_HISTORY
 
