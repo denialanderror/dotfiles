@@ -1,25 +1,21 @@
 ---
 
-# homebrew applications
-brew:
-  - zsh
+homebrew_packages:
+  - ansible
   - antibody
+  - bat
   - git
+  - httpie
+  - jq
+  - denisidoro/tools/navi
+  - node
+  - nvm
+  - prettyping
+  - python
+  - thefuck
   - tldr
   - tree
-  - bat
-  - prettyping
-  - httpie
-  - node
   - yarn
-  - nvm
-  - python
-  - denisidoro/tools/navi
-  - ??
+  - zsh
 
 # cask applications
-  - ??
-
-# zsh antigen plugins
-  - ?? add in zsh_plugins.txt?
-  - or not... easier to pull from git and then let anisble run the packaging

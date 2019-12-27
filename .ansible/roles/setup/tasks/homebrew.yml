@@ -1,7 +1,13 @@
 ---
 # install and update homebrew and cask
 
+- name: ensure homebrew is installed
+      stat:
+        path: "/usr/local/bin/brew"
+      register: "homebrew_check"
+
 - name: install homebrew
+  when: not homebrew_check.stat.exists
   shell: 'yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"' 
   args:
     creates: /usr/local/bin/brew
@@ -10,7 +16,13 @@
   homebrew:
     state: latest
     update_homebrew: yes
+    upgrade_all: yes
 
+-name: install homebrew packages
+  homebrew:
+    name: "{{ homebrew_packages }}"
+    state: present
+    
 - name: tap homebrew caskroom/cask
   homebrew_tap:
     tap: "caskroom/cask"

@@ -1,0 +1,5 @@
+---
+# install/update vim plugins using custom script and Vim's native plugin management
+
+- name: run vim plugin script
+  shell: {{ playbook_dir }}/roles/setup/scripts/vim-plug-man.sh
